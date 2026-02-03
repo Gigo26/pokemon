@@ -566,6 +566,91 @@ header nav li a:hover {
     gap: 5px;
 }
 
+.nav-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.img-fluid {
+    max-width: 500px;
+}
+
+.contenedor-icono {
+    background-color: #f8f9fa !important;
+    margin-bottom: 0.5rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-icono img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.consola-circulo {
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consola-circulo img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.search-container {
+    display: flex;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    max-width: 350px;
+    width: 100%;
+}
+
+.search-container .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    flex-grow: 1;
+}
+
+.search-btn {
+    background-color: #ffc107;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+    background-color: #e0a800;
+}
+
+.search-btn img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
 .pokemon-card .pokemon-image {
     width: 140px;
     height: 140px;
