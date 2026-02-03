@@ -566,6 +566,15 @@ header nav li a:hover {
     gap: 5px;
 }
 
+.img-fluid{
+   max-width: 500px;
+}
+
+.nav-item img{
+    width: 40px;
+    height: 40px;
+}
+
 .pokemon-card .pokemon-image {
     width: 140px;
     height: 140px;
