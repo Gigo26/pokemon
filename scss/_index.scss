@@ -249,13 +249,11 @@ $mapdivs: (
 
         .btnexplorar {
             background-color: $grisOscuro;
-            color: white;
+            @include badge;
             padding: 12px 30px;
-            border-radius: 5px;
             text-decoration: none;
             font-family: $poiretfamily;
-            font-weight: $negrita;
-            text-transform: uppercase;
+
             transition: 0.3s ease;
             border: 2px solid transparent;
         }
