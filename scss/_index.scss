@@ -1,0 +1,269 @@
+@use "sass:list";
+@use "variables" as *;
+
+.gridindex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-areas:
+        "uno uno dos"
+        "tres cuatro cinco";
+    gap: 20px;
+    width: $porcentaje100;
+    height: 700px;
+    margin: 0px;
+
+    div {
+        @include displaydirectionjustify($flex, $columnas, flex-end);
+        overflow: hidden;
+        border: 1px solid #c0c8d0;
+
+        img {
+            width: $porcentaje100;
+        }
+
+        p {
+            margin: 0px;
+            padding: 15px;
+            font-weight: $negrita;
+            font-size: 1rem;
+            font-weight: $negrita;
+            font-family: $narrowfamily;
+            color: white;
+            text-align: left;
+        }
+    }
+}
+
+$mapdivs: (
+    indexVideoPokemonDiv:(rgb(98, 161, 98), uno),
+    indexPokemonDiaDiv:(rgb(209, 217, 225), dos),
+    indexPokemonMetaDiv:(rgb(121, 69, 126), tres),
+    indexCommunityDayDiv:(rgb(6, 164, 6), cuatro),
+    indexHorizonsDiv:(rgb(71, 137, 229), cinco),
+);
+
+@each $div, $valores in $mapdivs {
+    .#{$div} {
+        background-color: list.nth($valores, 1);
+        grid-area: list.nth($valores, 2);
+    }
+}
+
+.indexVideoPokemonDiv {
+    iframe {
+        width: $porcentaje100;
+        height: 100%;
+        border: none;
+        display: block;
+    }
+}
+
+.indexPokemonDiaDiv {
+    @include displaydirectionjustify($flex, $columnas, flex-start);
+    padding: 15px;
+    align-items: $centrar;
+
+    h2 {
+        margin: 5px 0 10px 0;
+        font-size: 1.4rem;
+        color: #37474f;
+        font-family: $narrowfamily;
+        width: $negrita;
+    }
+
+    .pokemonimagencirculo {
+        @include backgroundmarginpadding(white, 10px 0 20px 0, 0%);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        @include displaydirectionjustify($flex, $columnas, $centrar);
+        align-items: center;
+        overflow: hidden;
+        border: none !important;
+        flex-shrink: 0;
+
+        img {
+            width: $porcentaje100;
+            height: 100vh;
+            object-fit: contain;
+            display: block;
+        }
+    }
+
+    .pokemontipos {
+        background: none !important;
+        border: none !important;
+        @include displaydirectionjustify($flex, $filas, $centrar);
+        align-items: $centrar;
+        height: auto !important;
+        margin-bottom: 5px;
+        color: black;
+
+        span {
+            @include backgroundmarginpadding(none, 4px 10px, 3px);
+            border-radius: 5px;
+            color: white;
+            font-weight: $negrita;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            display: inline-block;
+            font-family: $arialfamily;
+        }
+    }
+
+    .pokemondescripcion {
+        margin: 0%;
+        text-align: center;
+        padding: 4px;
+        border: none;
+
+        p {
+            color: #37474f !important;
+            padding: 0%;
+            font-size: 0.9rem;
+            font-family: $arialfamily;
+        }
+    }
+}
+
+
+
+.indexdestacados {
+    position: relative;
+    margin-top: 40px;
+
+    .destacadocontainer {
+        position: absolute;
+        top: -36px;
+        left: 6%;
+        z-index: 20;
+
+        .cuadrodestacado {
+            background-color: #d1d9e1;
+            padding: 8px 22px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid #b0b8c0;
+            border-bottom: none;
+            border-radius: 6px 6px 0 0;
+            white-space: nowrap;
+
+            .minipokeball {
+                width: 20px;
+                height: 20px;
+            }
+
+            span {
+                font-family: 'Poiret One', sans-serif;
+                font-weight: bold;
+                font-size: 0.9rem;
+                color: #37474f;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .flexdestacados {
+        display: flex;
+        width: 100%;
+        height: 400px;
+        align-items: center;
+        margin-top: 0;
+        border-top: 1px solid #b0b8c0;
+        color: black;
+
+        .pokerandom {
+            flex: 1;
+            background-color: $grisClaro;
+            height: 250px;
+            @include displaydirectionjustify($flex, $columnas, flex-end);
+            align-items: $centrar;
+            border: 0.5px solid $bordeGris;
+
+            img {
+                width: 70%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+        }
+
+        .pokeprincipalindex {
+            flex: 1;
+            background-color: $grisMedio;
+            height: 380px;
+            @include displaydirectionjustify($flex, $columnas, space-between);
+            align-items: $centrar;
+            border: 0.5px solid $bordeGrisOscuro;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+            img {
+                width: 90% !important;
+                height: auto;
+                margin-top: 10px;
+                flex-grow: 1;
+                object-fit: contain;
+            }
+
+            .infoinferiordestacada {
+                width: 100%;
+                background-color: #b0b8c0;
+                text-align: center;
+
+                p {
+                    background-color: rgba(0, 0, 0, 0.1) !important;
+                    padding: 10px 0 !important;
+                    margin: 0 !important;
+                }
+
+                .pokemontipos {
+                    width: 100%;
+                    background-color: rgb(198, 198, 198);
+                    padding: 15px 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-top: 1px solid #9aa2a9;
+                    margin-right: $porcentaje100;
+
+                    .name {
+                        color: black;
+                    }
+
+                    span {
+                        @include backgroundmarginpadding(none, 4px 10px, 3px);
+                        @include badge;
+                        font-family: $arialfamily;
+                    }
+                }
+            }
+        }
+    }
+
+    .btnexplorarcontainer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+
+        .btnexplorar {
+            background-color: $grisOscuro;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: $poiretfamily;
+            font-weight: $negrita;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btnexplorar:hover {
+            background-color: $grisOscuro;
+            transform: scale(1.05);
+            border-color: $grisMedio;
+        }
+    }
+}

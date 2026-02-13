@@ -1,0 +1,99 @@
+@use "variables" as *;
+
+body {
+    @include backgroundmarginpadding(#414e54, 0, 0);
+    font-family: $poiretfamily;
+}
+
+footer {
+    @include displaydirectionjustify($flex, $filas, $centrar);
+    align-items: $centrar;
+
+    p {
+        font-family: $poiretfamily;
+        color: white;
+        font-size: 1rem;
+        font-weight: $negrita;
+    }
+}
+
+.contenidoprincipal {
+    max-width: 1250px;
+    @include displaydirectionjustify($flex, $columnas, $centrar);
+    gap: 25px;
+    @include backgroundmarginpadding(#f2f4f6, 0 auto, 30px);
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    h1 {
+        font-weight: $negrita;
+    }
+}
+
+//HEADER
+header {
+    div {
+        .img-fluid {
+            max-width: 500px;
+        }
+    }
+
+    nav {
+        ul {
+            li {
+                a {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    span {
+                        font-family: $poiretfamily;
+                        font-weight: 700;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        text-align: $centrar;
+                    }
+                }
+            }
+
+            li a:hover {
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
+
+.separadortipo {
+    color: black;
+    font-weight: bold;
+    margin: 0 5px;
+    font-size: 1rem;
+}
+
+$maptipos: (
+    acero:#60a1b8,
+    agua:#2980ef,
+    bicho:#91a119,
+    dragon:#5061e1,
+    electrico:#fac000,
+    fantasma:#704170,
+    fuego:#e62829,
+    veneno:#8f41cb,
+    volador:#81b9ef,
+    hada:#ef71ef,
+    hielo:#3fd8ff,
+    lucha:#ff8000,
+    normal:#9fa19f,
+    planta:#3fa129,
+    psiquico:#ef4179,
+    roca:#afa981,
+    siniestro:#50413f,
+    tierra:#915121,
+);
+
+@each $tipo, $color in $maptipos {
+    .colortipo#{$tipo} {
+        background-color: $color;
+    }
+}

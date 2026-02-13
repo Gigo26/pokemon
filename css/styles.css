@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+body {
+  background-color: #414e54;
+  margin: 0;
+  padding: 0;
+  font-family: "Poiret One", sans-serif;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-family: "Poiret One", sans-serif;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contenidoprincipal {
+  max-width: 1250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f2f4f6;
+  margin: 0 auto;
+  padding: 30px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.contenidoprincipal h1 {
+  font-weight: bold;
+}
+
+header div .img-fluid {
+  max-width: 500px;
+}
+header nav ul li a img {
+  width: 40px;
+  height: 40px;
+}
+header nav ul li a span {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+header nav ul li a:hover {
+  transform: translateY(-3px);
+}
+
+.separadortipo {
+  color: black;
+  font-weight: bold;
+  margin: 0 5px;
+  font-size: 1rem;
+}
+
+.colortipoacero {
+  background-color: #60a1b8;
+}
+
+.colortipoagua {
+  background-color: #2980ef;
+}
+
+.colortipobicho {
+  background-color: #91a119;
+}
+
+.colortipodragon {
+  background-color: #5061e1;
+}
+
+.colortipoelectrico {
+  background-color: #fac000;
+}
+
+.colortipofantasma {
+  background-color: #704170;
+}
+
+.colortipofuego {
+  background-color: #e62829;
+}
+
+.colortipoveneno {
+  background-color: #8f41cb;
+}
+
+.colortipovolador {
+  background-color: #81b9ef;
+}
+
+.colortipohada {
+  background-color: #ef71ef;
+}
+
+.colortipohielo {
+  background-color: #3fd8ff;
+}
+
+.colortipolucha {
+  background-color: #ff8000;
+}
+
+.colortiponormal {
+  background-color: #9fa19f;
+}
+
+.colortipoplanta {
+  background-color: #3fa129;
+}
+
+.colortipopsiquico {
+  background-color: #ef4179;
+}
+
+.colortiporoca {
+  background-color: #afa981;
+}
+
+.colortiposiniestro {
+  background-color: #50413f;
+}
+
+.colortipotierra {
+  background-color: #915121;
+}
+
+.gridindex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1.5fr 1fr;
+  grid-template-areas: "uno uno dos" "tres cuatro cinco";
+  gap: 20px;
+  width: 100%;
+  height: 700px;
+  margin: 0px;
+}
+.gridindex div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  border: 1px solid #c0c8d0;
+}
+.gridindex div img {
+  width: 100%;
+}
+.gridindex div p {
+  margin: 0px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.indexVideoPokemonDiv {
+  background-color: rgb(98, 161, 98);
+  grid-area: uno;
+}
+
+.indexPokemonDiaDiv {
+  background-color: rgb(209, 217, 225);
+  grid-area: dos;
+}
+
+.indexPokemonMetaDiv {
+  background-color: rgb(121, 69, 126);
+  grid-area: tres;
+}
+
+.indexCommunityDayDiv {
+  background-color: rgb(6, 164, 6);
+  grid-area: cuatro;
+}
+
+.indexHorizonsDiv {
+  background-color: rgb(71, 137, 229);
+  grid-area: cinco;
+}
+
+.indexVideoPokemonDiv iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.indexPokemonDiaDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px;
+  align-items: center;
+}
+.indexPokemonDiaDiv h2 {
+  margin: 5px 0 10px 0;
+  font-size: 1.4rem;
+  color: #37474f;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: bold;
+}
+.indexPokemonDiaDiv .pokemonimagencirculo {
+  background-color: white;
+  margin: 10px 0 20px 0;
+  padding: 0%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: none !important;
+  flex-shrink: 0;
+}
+.indexPokemonDiaDiv .pokemonimagencirculo img {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  display: block;
+}
+.indexPokemonDiaDiv .pokemontipos {
+  background: none !important;
+  border: none !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: auto !important;
+  margin-bottom: 5px;
+  color: black;
+}
+.indexPokemonDiaDiv .pokemontipos span {
+  background-color: none;
+  margin: 4px 10px;
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.indexPokemonDiaDiv .pokemondescripcion {
+  margin: 0%;
+  text-align: center;
+  padding: 4px;
+  border: none;
+}
+.indexPokemonDiaDiv .pokemondescripcion p {
+  color: #37474f !important;
+  padding: 0%;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.indexdestacados {
+  position: relative;
+  margin-top: 40px;
+}
+.indexdestacados .destacadocontainer {
+  position: absolute;
+  top: -36px;
+  left: 6%;
+  z-index: 20;
+}
+.indexdestacados .destacadocontainer .cuadrodestacado {
+  background-color: #d1d9e1;
+  padding: 8px 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #b0b8c0;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  white-space: nowrap;
+}
+.indexdestacados .destacadocontainer .cuadrodestacado .minipokeball {
+  width: 20px;
+  height: 20px;
+}
+.indexdestacados .destacadocontainer .cuadrodestacado span {
+  font-family: "Poiret One", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #37474f;
+  text-transform: uppercase;
+}
+.indexdestacados .flexdestacados {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  align-items: center;
+  margin-top: 0;
+  border-top: 1px solid #b0b8c0;
+  color: black;
+}
+.indexdestacados .flexdestacados .pokerandom {
+  flex: 1;
+  background-color: #d1d9e1;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border: 0.5px solid #b0b8c0;
+}
+.indexdestacados .flexdestacados .pokerandom img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.indexdestacados .flexdestacados .pokeprincipalindex {
+  flex: 1;
+  background-color: #b0b8c0;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.5px solid #9aa2a9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.indexdestacados .flexdestacados .pokeprincipalindex img {
+  width: 90% !important;
+  height: auto;
+  margin-top: 10px;
+  flex-grow: 1;
+  object-fit: contain;
+}
+.indexdestacados .flexdestacados .pokeprincipalindex .infoinferiordestacada {
+  width: 100%;
+  background-color: #b0b8c0;
+  text-align: center;
+}
+.indexdestacados .flexdestacados .pokeprincipalindex .infoinferiordestacada p {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  padding: 10px 0 !important;
+  margin: 0 !important;
+}
+.indexdestacados .flexdestacados .pokeprincipalindex .infoinferiordestacada .pokemontipos {
+  width: 100%;
+  background-color: rgb(198, 198, 198);
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #9aa2a9;
+  margin-right: 100%;
+}
+.indexdestacados .flexdestacados .pokeprincipalindex .infoinferiordestacada .pokemontipos .name {
+  color: black;
+}
+.indexdestacados .flexdestacados .pokeprincipalindex .infoinferiordestacada .pokemontipos span {
+  background-color: none;
+  margin: 4px 10px;
+  padding: 3px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.indexdestacados .btnexplorarcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.indexdestacados .btnexplorarcontainer .btnexplorar {
+  background-color: #37474f;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Poiret One", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+}
+.indexdestacados .btnexplorarcontainer .btnexplorar:hover {
+  background-color: #37474f;
+  transform: scale(1.05);
+  border-color: #b0b8c0;
+}
+
+/*# sourceMappingURL=styles.css.map */

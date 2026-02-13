@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+$poiretfamily: 'Poiret One', sans-serif;
+$arialfamily: Arial, Helvetica, sans-serif;
+$narrowfamily: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$flex: flex;
+$grid: grid;
+$negrita: bold;
+$columnas: column;
+$filas: row;
+$centrar: center;
+$porcentaje100: 100%;
+$grisClaro: #d1d9e1;
+$grisMedio: #b0b8c0;
+$grisOscuro: #37474f;
+$bordeGris: #b0b8c0;
+$bordeGrisOscuro: #9aa2a9;
+
+@mixin backgroundmarginpadding($backgroundcolor, $margin, $padding) {
+    background-color: $backgroundcolor;
+    margin: $margin;
+    padding: $padding;
+}
+
+
+@mixin displaydirectionjustify($display, $flexdirection, $justify) {
+    display: $display;
+    flex-direction: $flexdirection;
+    justify-content: $justify;
+}
+
+@mixin badge {
+    border-radius: 5px;
+    color: white;
+    font-weight: $negrita;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
