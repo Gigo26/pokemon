@@ -401,4 +401,144 @@ header nav ul li a:hover {
   border-color: #b0b8c0;
 }
 
+.destacadosgames {
+  position: relative;
+  margin-top: 40px;
+}
+.destacadosgames .containertitledestacado {
+  position: absolute;
+  top: -36px;
+  left: 6%;
+  z-index: 20;
+}
+.destacadosgames .containertitledestacado .cuadrodestacado {
+  background-color: #d1d9e1;
+  padding: 8px 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #b0b8c0;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  white-space: nowrap;
+}
+.destacadosgames .containertitledestacado .cuadrodestacado .minivideogame {
+  width: 20px;
+  height: 20px;
+}
+.destacadosgames .containertitledestacado .cuadrodestacado span {
+  font-family: "Poiret One", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #37474f;
+  text-transform: uppercase;
+}
+.destacadosgames .videogameflex {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  align-items: center;
+  border-top: 1px solid #126ac2;
+}
+.destacadosgames .videogameflex .videogamerandom {
+  flex: 1;
+  background-color: #b7b9bb;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.destacadosgames .videogameflex .videogamerandom img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  display: block;
+}
+.destacadosgames .videogameflex .videogamerandom p {
+  margin: 4px 0 6px 0;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.destacadosgames .videogameflex .videogameprincipalindex {
+  flex: 1.1;
+  background-color: #515153;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.destacadosgames .videogameflex .videogameprincipalindex img {
+  width: 100% !important;
+  height: 400px;
+  margin-top: 10px;
+  flex-grow: 1;
+  object-fit: contain;
+}
+.destacadosgames .videogameflex .videogameprincipalindex .infoinferiordestacada {
+  width: 100%;
+  background-color: #b0b8c0;
+  text-align: center;
+}
+.destacadosgames .videogameflex .videogameprincipalindex .infoinferiordestacada .videogamedestacado {
+  margin: 4px 0 6px 0;
+  font-size: 1.4rem;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.contenedoricono {
+  background-color: #f8f9fa !important;
+  margin-bottom: 0.5rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedoricono img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.generacionesdiv p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.generacionesdiv .juegosgeneracion p {
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+.generacionesdiv .juegosgeneracion .juegosgenflex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+}
+.generacionesdiv .juegosgeneracion .juegosgenflex div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.generacionesdiv .juegosgeneracion .juegosgenflex div img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.generacionesdiv .juegosgeneracion .juegosgenflex div p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
