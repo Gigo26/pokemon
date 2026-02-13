@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+.listaTiposGrid {
+    display: $grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: $porcentaje100;
+    div {
+        @extend %flexColumnCenter;
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: $sombraCard;
+        }
+        p {
+            text-align: $centrar;
+            margin-top: 8px;
+            font-size: 1rem;
+            font-weight: $negrita;
+            font-family: $arialfamily;
+        }
+    }
+}
+.tablaTipos {
+    @extend %flexRowCenter;
+}

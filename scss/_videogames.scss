@@ -3,13 +3,11 @@
 .destacadosgames {
     position: relative;
     margin-top: 40px;
-
     .containertitledestacado {
         position: absolute;
         top: -36px;
         left: 6%;
         z-index: 20;
-
         .cuadrodestacado {
             background-color: $grisClaro;
             padding: 8px 22px;
@@ -24,7 +22,6 @@
                 width: 20px;
                 height: 20px;
             }
-
             span {
                 font-family: $poiretfamily;
                 font-weight: $negrita;
@@ -34,60 +31,48 @@
             }
         }
     }
-
     .videogameflex {
         display: $flex;
         width: $porcentaje100;
         height: 400px;
         align-items: $centrar;
-        border-top: 1px solid #126ac2;
-
+        border-top: 1px solid $azulBordeGame;
         .videogamerandom {
             flex: 1;
-            background-color: #b7b9bb;
-            height: 250px;
-            @include displaydirectionjustify($flex, $columnas, flex-end);
-            align-items: $centrar;
-
+            background-color: $grisClaroSuave;
+            height: $alturaCardPequena;
+            @extend %flexColumnCenter;
+            justify-content: flex-end;
             img {
                 width: $porcentaje100;
                 aspect-ratio: 16 / 9;
                 object-fit: contain;
-                display: block;
             }
-
             p {
                 margin: 4px 0 6px 0;
                 font-size: 1.1rem;
                 font-family: $arialfamily;
             }
         }
-
         .videogameprincipalindex {
             flex: 1.1;
-            background-color: #515153;
-            height: 300px;
+            background-color: $grisPrincipalGame;
+            height: $alturaCardPrincipal;
             width: $porcentaje100;
-            @include displaydirectionjustify($flex, $columnas, space-between);
-            align-items: $centrar;
-
+            @extend %flexColumnCenter;
+            justify-content: space-between;
             img {
                 width: $porcentaje100 !important;
                 height: 400px;
-                margin-top: 10px;
-                flex-grow: 1;
                 object-fit: contain;
             }
-
             .infoinferiordestacada {
                 width: $porcentaje100;
                 background-color: $grisMedio;
                 text-align: $centrar;
-
                 .videogamedestacado {
                     margin: 4px 0 6px 0;
                     font-size: 1.4rem;
-                    color: black;
                     font-family: $narrowfamily;
                     font-weight: $negrita;
                 }
@@ -95,17 +80,13 @@
         }
     }
 }
-
 .contenedoricono {
-    background-color: #f8f9fa !important;
+    @extend %flexRowCenter;
+    background-color: #f8f9fa;
     margin-bottom: 0.5rem;
     width: 150px;
     height: 150px;
     border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     img {
         width: 120px;
         height: 120px;
@@ -113,43 +94,36 @@
         border-radius: 15px;
     }
 }
-
 .generacionesdiv {
     p {
         font-size: 2rem;
-        font-weight: bold;
+        font-weight: $negrita;
+        font-family: $poiretfamily;
     }
-
     .juegosgeneracion {
         p {
             margin-left: 20px;
             font-size: 1.5rem;
+            font-family: $arialfamily;
         }
-
         .juegosgenflex {
-            display: flex;
+            @extend %flexRowCenter;
             justify-content: space-evenly;
             align-items: flex-start;
             gap: 20px;
-
             div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
+                @extend %flexColumnCenter;
+                text-align: $centrar;
 
                 img {
                     width: 250px;
-                    height: auto;
-                    object-fit: cover;
                     border-radius: 12px;
-                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                    box-shadow: $sombraCard;
                 }
-
                 p {
                     margin-top: 10px;
                     font-size: 1.5rem;
-                    justify-content: center;
+                    font-family: $narrowfamily;
                 }
             }
         }
