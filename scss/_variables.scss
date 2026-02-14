@@ -21,6 +21,17 @@ $bordeGrisOscuro: #9aa2a9;
 $sombraCard: 0 4px 10px rgba(0, 0, 0, 0.3);
 $alturaCardPequena: 250px;
 $alturaCardPrincipal: 300px;
+$blanco: white;
+$negro: black;
+$grisFondoCard: #f0f0f0;
+$amarilloBoton: #ffc107;
+$amarilloBotonHover: #e0a800;
+$grisBordeInput: #ced4da;
+$radioPequeno: 5px;
+$radioMediano: 8px;
+$radioGrande: 15px;
+$anchoCard: 180px;
+$altoImagenPokemon: 140px;
 
 @mixin backgroundmarginpadding($backgroundcolor, $margin, $padding) {
     background-color: $backgroundcolor;
@@ -56,4 +67,17 @@ $alturaCardPrincipal: 300px;
     flex-direction: $columnas;
     justify-content: $centrar;
     align-items: $centrar;
+}
+
+%flexRowBetween {
+    display: $flex;
+    flex-direction: $filas;
+    justify-content: space-between;
+    align-items: $centrar;
+}
+
+%cardBase {
+    background-color: $blanco;
+    border-radius: $radioGrande;
+    box-shadow: $sombraCard;
 }

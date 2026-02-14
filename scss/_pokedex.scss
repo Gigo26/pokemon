@@ -1,1 +1,105 @@
 @use "variables" as *;
+
+.pokedex {
+    margin: 0;
+}
+
+.buscador {
+
+    p {
+        color: $blanco;
+    }
+
+    .search-container {
+        @extend %flexRowCenter;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        max-width: 350px;
+        width: $porcentaje100;
+
+        .form-control {
+            border-radius: $radioMediano 0 0 $radioMediano;
+            border: 1px solid $grisBordeInput;
+            padding: 0.375rem 0.75rem;
+            flex-grow: 1;
+        }
+
+        .search-btn {
+            background-color: $amarilloBoton;
+            border: none;
+            border-radius: 0 $radioMediano $radioMediano 0;
+            @extend %flexRowCenter;
+            padding: 5px 15px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+
+            img {
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+
+            &:hover {
+                background-color: $amarilloBotonHover;
+            }
+        }
+    }
+}
+
+.pokemoncontainer {
+    display: $grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: $centrar;
+
+    .pokemoncard {
+        @extend %cardBase;
+        width: $anchoCard;
+        text-align: $centrar;
+        padding: 15px;
+        @extend %flexColumnCenter;
+        gap: 5px;
+
+        .pokemonimage {
+            width: $altoImagenPokemon;
+            height: $altoImagenPokemon;
+            background-color: $grisFondoCard;
+            @extend %flexRowCenter;
+            border-radius: $radioMediano;
+            overflow: hidden;
+
+            img {
+                width: $porcentaje100;
+                height: $porcentaje100;
+                object-fit: contain;
+            }
+        }
+
+        p {
+            margin: 2px 0;
+            font-weight: $negrita;
+            text-transform: capitalize;
+        }
+
+        .pokemontypes {
+            border: none !important;
+            @extend %flexRowCenter;
+            height: auto !important;
+            margin-bottom: 5px;
+            color: $negro;
+
+            span {
+                margin: 4px 10px;
+                padding: 3px;
+                border-radius: $radioPequeno;
+                color: $blanco;
+                font-weight: $negrita;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                display: inline-block;
+                font-family: $arialfamily;
+            }
+        }
+    }
+}

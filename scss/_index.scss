@@ -92,7 +92,6 @@ $mapdivs: (
     }
 
     .pokemontipos {
-        background: none !important;
         border: none !important;
         @include displaydirectionjustify($flex, $filas, $centrar);
         align-items: $centrar;

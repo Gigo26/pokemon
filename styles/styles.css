@@ -98,7 +98,7 @@ header nav li a:hover {
     font-family: 'Poiret One', sans-serif;
 }
 
-.pokemon-imagen-circulo {
+.pokemonimagen-circulo {
     background-color: white;
     width: 200px;
     height: 200px;
@@ -112,7 +112,7 @@ header nav li a:hover {
     flex-shrink: 0;
 }
 
-.pokemon-imagen-circulo img {
+.pokemonimagen-circulo img {
     width: 100%;
     height: 100vh;
     object-fit: contain;
@@ -453,7 +453,7 @@ header nav li a:hover {
     font-weight: bold;
 }
 
-.serie-img-wrapper {
+.serieimgwrapper {
     width: 180px;
     height: 300px;
     overflow: hidden;
@@ -462,7 +462,7 @@ header nav li a:hover {
     margin: 0 auto;
 }
 
-.serie-img-wrapper img {
+.serieimgwrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -479,7 +479,7 @@ header nav li a:hover {
     font-weight: bold;
 }
 
-.pelicula-img-wrapper {
+.peliculaimgwrapper {
     width: 180px;
     height: 300px;
     overflow: hidden;
@@ -488,7 +488,7 @@ header nav li a:hover {
     margin: 0 auto;
 }
 
-.pelicula-img-wrapper img {
+.peliculaimgwrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -546,7 +546,7 @@ header nav li a:hover {
     height: 30px;
 }
 
-.pokemon-container {
+.pokemoncontainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -554,7 +554,7 @@ header nav li a:hover {
     justify-items: center;
 }
 
-.pokemon-card {
+.pokemoncard {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -652,7 +652,7 @@ header nav li a:hover {
     object-fit: contain;
 }
 
-.pokemon-card .pokemon-image {
+.pokemoncard .pokemonimage {
     width: 140px;
     height: 140px;
     background-color: #f0f0f0;
@@ -663,19 +663,19 @@ header nav li a:hover {
     overflow: hidden;
 }
 
-.pokemon-image img {
+.pokemonimage img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.pokemon-card p {
+.pokemoncard p {
     margin: 2px 0;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-.pokemon-card .pokemon-types {
+.pokemoncard .pokemontypes {
     display: flex;
     gap: 5px;
     justify-content: flex-start;
@@ -684,7 +684,7 @@ header nav li a:hover {
     margin-top: 2px;
 }
 
-.pokemon-types span {
+.pokemontypes span {
     color: white;
     padding: 2px 6px;
     border-radius: 10px;
@@ -821,7 +821,7 @@ header nav li a:hover {
 
 @media (max-width: 992px) {
 
-    .pokemon-container,
+    .pokemoncontainer,
     .seriesgrid,
     .peliculasgrid {
         grid-template-columns: repeat(3, 1fr);
@@ -848,7 +848,7 @@ header nav li a:hover {
         width: 200px;
     }
 
-    .pokemon-container,
+    .pokemoncontainer,
     .seriesgrid,
     .peliculasgrid {
         grid-template-columns: repeat(2, 1fr);
@@ -865,14 +865,14 @@ header nav li a:hover {
 
 @media (max-width: 480px) {
 
-    .pokemon-container,
+    .pokemoncontainer,
     .seriesgrid,
     .peliculasgrid,
     .listaTiposGrid {
         grid-template-columns: 1fr;
     }
 
-    .pokemon-card {
+    .pokemoncard {
         width: 80%;
     }
 
