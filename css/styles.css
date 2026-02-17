@@ -643,6 +643,25 @@ header nav ul li a:hover {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+@media (max-width: 768px) {
+  .juegosgeneracion .juegosgenflex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .juegosgeneracion .juegosgenflex div {
+    width: 45%;
+  }
+  .juegosgeneracion .juegosgenflex div img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  .juegosgeneracion .juegosgenflex div p {
+    font-size: 1.1rem;
+    margin-left: 0;
+  }
+}
 .consola-circulo {
   border-radius: 50%;
   background-color: #f8f9fa;

@@ -159,3 +159,28 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .juegosgeneracion {
+        .juegosgenflex {
+            flex-wrap: wrap; // Permite que los juegos bajen si no caben
+            justify-content: center; // Los centra si quedan espacios vacíos
+            gap: 15px;
+
+            div {
+                width: 45%; // Entran 2 juegos por fila aproximadamente
+
+                img {
+                    width: 100%; // La imagen se ajusta al 45% del contenedor
+                    max-width: 200px; // Pero que no crezca demasiado
+                    height: auto;
+                }
+
+                p {
+                    font-size: 1.1rem; // Reducimos texto para que no rompa el diseño
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
