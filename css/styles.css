@@ -498,6 +498,18 @@ header nav ul li a:hover {
   color: black;
 }
 
+@media (max-width: 480px) {
+  .gridindex {
+    grid-template-columns: 1fr;
+    grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco";
+    height: auto;
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+  .indexVideoPokemonDiv iframe {
+    height: 250px;
+  }
+}
 .destacadosgames {
   position: relative;
   margin-top: 40px;
