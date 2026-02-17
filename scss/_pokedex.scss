@@ -110,28 +110,3 @@
         font-family: $arialfamily;
     }
 }
-
-@media (max-width: 480px) {
-    .contenidoprincipal .pokemoncontainer {
-        grid-template-columns: 1fr !important;
-        gap: 20px;
-        padding: 10px;
-        @include displaydirectionjustify($flex !important, $columnas, $centrar);
-
-        .pokemoncard {
-            width: 100%;
-            max-width: 280px;
-            margin: 0 auto;
-
-            &:hover {
-                transform: scale(1.02);
-                font-size: 1rem;
-            }
-
-            .pokemonimage {
-                width: 180px;
-                height: 180px;
-            }
-        }
-    }
-}

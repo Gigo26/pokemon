@@ -1,0 +1,301 @@
+@use "variables" as *;
+
+@media (max-width: 480px) {
+    .contenidoprincipal {
+        padding: 15px;
+    }
+
+    header {
+        .img-fluid {
+            max-width: 220px !important;
+        }
+
+        .menu-toggle {
+            display: $flex;
+        }
+
+        .nav {
+            display: none !important;
+            flex-direction: $columnas;
+            background-color: #f8f9fa;
+            padding-bottom: 20px;
+
+            &.show {
+                display: $flex !important;
+            }
+
+            li {
+                width: $porcentaje100;
+                border-bottom: 1px solid #ddd;
+
+                .nav-link {
+                    padding: 15px;
+                    flex-direction: $filas !important;
+                    gap: 15px;
+                    justify-content: flex-start;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gridindex {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco";
+        height: auto;
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .indexVideoPokemonDiv {
+        iframe {
+            height: 250px;
+        }
+    }
+
+    .indexdestacados {
+        margin-top: 60px;
+
+        .destacadocontainer {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -35px;
+        }
+
+        .flexdestacados {
+            flex-direction: $columnas;
+            height: auto;
+            border: none;
+
+            .pokerandom {
+                display: none;
+            }
+
+            .pokeprincipalindex {
+                width: $porcentaje100;
+                height: 450px;
+                flex: none;
+
+                img {
+                    width: 80% !important;
+                    margin: 20px auto;
+                }
+
+                .infoinferiordestacada {
+                    .pokemontipos {
+                        flex-wrap: wrap;
+                        gap: 5px;
+                        margin-right: 0;
+
+                        span {
+                            margin: 2px;
+                        }
+                    }
+                }
+            }
+
+            .pokeprincipalindex:hover {
+                transform: none;
+            }
+        }
+
+        .btnexplorarcontainer {
+            justify-content: $centrar;
+            margin-top: 20px;
+
+            .btnexplorar {
+                width: 90%;
+                text-align: $centrar;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .destacadosgames {
+        margin-top: 60px;
+
+        .containertitledestacado {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -35px;
+        }
+
+        .videogameflex {
+            flex-direction: $columnas;
+            height: auto;
+            border-top: 2px solid $azulBordeGame;
+
+            .videogamerandom {
+                display: none;
+            }
+
+            .videogameprincipalindex {
+                width: $porcentaje100;
+                height: auto;
+                flex: none;
+                padding: 30px 0;
+
+                img {
+                    width: 90% !important;
+                    height: 280px;
+                    margin: 0 auto 20px auto;
+                }
+
+                .infoinferiordestacada .videogamedestacado {
+                    font-size: 1.3rem;
+                    padding: 15px 10px;
+                    margin: 0;
+                }
+            }
+
+            .videogameprincipalindex:hover {
+                transform: none;
+                background: $grisPrincipalGame;
+            }
+        }
+    }
+
+    .generacionesdiv {
+        p {
+            font-size: 1.5rem;
+            text-align: $centrar;
+        }
+
+        .juegosgeneracion {
+            p {
+                font-size: 1.2rem;
+                text-align: $centrar;
+                margin-left: 0;
+            }
+
+            .juegosgenflex {
+                flex-direction: $columnas;
+                align-items: $centrar;
+
+                div {
+                    width: 90%;
+
+                    img {
+                        width: $porcentaje100;
+                        max-width: 280px;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contenidoprincipal .pokemoncontainer {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        padding: 10px;
+        @include displaydirectionjustify($flex !important, $columnas, $centrar);
+
+        .pokemoncard {
+            width: $porcentaje100;
+            max-width: 280px;
+            margin: 0 auto;
+
+            &:hover {
+                transform: scale(1.02);
+                font-size: 1rem;
+            }
+
+            .pokemonimage {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .listaTiposGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 5px;
+
+        div {
+            img {
+                width: 75px;
+                height: 75px;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .tablaTipos {
+        padding: 10px;
+
+        img {
+            width: $porcentaje100;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .seriestext {
+        .col-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .serieimgwrapper {
+            width: 140px;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.85rem;
+            padding: 0 5px;
+            line-height: 1.2;
+        }
+    }
+
+    .container.my-5 h2 {
+        text-align: $centrar;
+        font-size: 1.8rem;
+    }
+
+    .peliculastext {
+        .col-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .peliculaimgwrapper {
+            width: 140px;
+            height: 220px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 0.85rem;
+            line-height: 1.2;
+            padding: 0 4px;
+        }
+    }
+}
