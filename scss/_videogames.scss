@@ -161,26 +161,75 @@
 }
 
 @media (max-width: 480px) {
+    .destacadosgames {
+        margin-top: 60px;
+
+        .containertitledestacado {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -35px;
+        }
+
+        .videogameflex {
+            flex-direction: column;
+            height: auto;
+            border-top: 2px solid $azulBordeGame;
+            .videogamerandom {
+                display: none;
+            }
+
+            .videogameprincipalindex {
+                width: 100%;
+                height: auto;
+                flex: none;
+                padding: 30px 0;
+
+                img {
+                    width: 90% !important;
+                    height: 280px;
+                    margin: 0 auto 20px auto;
+                }
+
+                .infoinferiordestacada {
+                    .videogamedestacado {
+                        font-size: 1.3rem;
+                        padding: 15px 10px;
+                        margin: 0;
+                    }
+                }
+            }
+            .videogameprincipalindex:hover {
+                transform: none;
+                background: $grisPrincipalGame;
+            }
+        }
+    }
+
     .generacionesdiv {
         p {
             font-size: 1.5rem;
             text-align: center;
         }
+
         .juegosgeneracion {
             p {
                 font-size: 1.2rem;
                 text-align: center;
                 margin-left: 0;
             }
+
             .juegosgenflex {
                 flex-direction: column;
                 align-items: center;
+
                 div {
                     width: 90%;
+
                     img {
                         width: 100%;
                         max-width: 280px;
                     }
+
                     p {
                         font-size: 1.2rem;
                         margin-bottom: 20px;

@@ -296,9 +296,66 @@ $mapdivs: (
         grid-template-rows: auto;
         gap: 15px;
     }
+
     .indexVideoPokemonDiv {
         iframe {
             height: 250px;
+        }
+    }
+
+    .indexdestacados {
+        margin-top: 60px;
+
+        .destacadocontainer {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -35px;
+        }
+
+        .flexdestacados {
+            flex-direction: column;
+            height: auto;
+            border: none;
+
+            .pokerandom {
+                display: none;
+            }
+
+            .pokeprincipalindex {
+                width: 100%;
+                height: 450px;
+                flex: none;
+
+                img {
+                    width: 80% !important;
+                    margin: 20px auto;
+                }
+
+                .infoinferiordestacada {
+                    .pokemontipos {
+                        flex-wrap: wrap;
+                        gap: 5px;
+                        margin-right: 0;
+
+                        span {
+                            margin: 2px;
+                        }
+                    }
+                }
+            }
+            .pokeprincipalindex:hover {
+                transform: none;
+            }
+        }
+
+        .btnexplorarcontainer {
+            justify-content: center; 
+            margin-top: 20px;
+
+            .btnexplorar {
+                width: 90%;
+                text-align: center;
+            }
         }
     }
 }
