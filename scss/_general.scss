@@ -60,7 +60,7 @@ header {
 
         .bar {
             height: 3px;
-            width: 100%;
+            width:$porcentaje100;
             background-color: #333;
             border-radius: 10px;
         }
@@ -137,26 +137,26 @@ $maptipos: (
         }
 
         .menu-toggle {
-            display: flex;
+            display:$flex;
         }
 
         .nav {
             display: none !important;
-            flex-direction: column;
+            flex-direction:$columnas;
             background-color: #f8f9fa;
             padding-bottom: 20px;
 
             &.show {
-                display: flex !important;
+                display:$flex !important;
             }
 
             li {
-                width: 100%;
+                width:$porcentaje100;
                 border-bottom: 1px solid #ddd;
 
                 .nav-link {
                     padding: 15px;
-                    flex-direction: row !important;
+                    flex-direction:$filas !important;
                     gap: 15px;
                     justify-content: flex-start;
                     padding-left: 30px;
