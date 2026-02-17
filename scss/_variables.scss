@@ -3,6 +3,11 @@
 $poiretfamily: 'Poiret One', sans-serif;
 $arialfamily: Arial, Helvetica, sans-serif;
 $narrowfamily: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$background1: linear-gradient(142deg, rgba(113, 150, 113, 1) 0%, rgba(97, 125, 97, 1) 25%, rgba(163, 207, 163, 1) 50%, rgba(177, 204, 177, 1) 75%, rgba(98, 161, 98, 1) 100%);
+$background2: radial-gradient(circle, rgba(255, 255, 43, 1) 0%, rgba(240, 240, 153, 1) 25%, rgba(225, 230, 181, 1) 50%, rgba(179, 179, 89, 1) 75%, rgba(202, 204, 92, 1) 100%);
+$background3: linear-gradient(142deg, rgba(211, 156, 217, 1) 0%, rgba(154, 111, 158, 1) 25%, rgba(185, 138, 186, 1) 50%, rgba(141, 101, 143, 1) 75%, rgba(210, 152, 217, 1) 100%);
+$background4: linear-gradient(142deg, rgba(193, 224, 193, 1) 0%, rgba(109, 247, 109, 1) 25%, rgba(147, 194, 147, 1) 50%, rgba(117, 250, 117, 1) 75%, rgba(176, 247, 176, 1) 100%);
+$background5: linear-gradient(56deg, rgba(59, 93, 128, 1) 0%, rgba(88, 124, 173, 1) 25%, rgba(112, 135, 212, 1) 50%, rgba(158, 185, 232, 1) 75%, rgba(165, 193, 250, 1) 100%);
 $flex: flex;
 $grid: grid;
 $negrita: bold;
@@ -53,6 +58,20 @@ $altoImagenPokemon: 140px;
     font-size: 0.8rem;
     text-transform: uppercase;
     display: inline-block;
+}
+
+@keyframes fondoAnimado {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 %flexRowCenter {

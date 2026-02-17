@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@keyframes fondoAnimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .buscador .search-container, .buscador .search-container .search-btn, .pokemoncontainer .pokemoncard .pokemonimage, .pokemoncontainer .pokemoncard .pokemontypes, .tablaTipos, .contenedoricono, .generacionesdiv .juegosgeneracion .juegosgenflex {
   display: flex;
   flex-direction: row;
@@ -20,6 +31,9 @@
 }
 
 body {
+  background: linear-gradient(132deg, rgb(66, 66, 66) 0%, rgb(194, 192, 192) 25%, rgb(102, 104, 105) 50%, rgb(192, 193, 194) 75%, rgb(89, 89, 92) 100%);
+  background-size: 300% 300%;
+  animation: fondoAnimado 20s ease-in-out infinite;
   background-color: #414e54;
   margin: 0;
   padding: 0;
@@ -48,6 +62,7 @@ footer p {
   background-color: #f2f4f6;
   margin: 0 auto;
   padding: 30px;
+  background: radial-gradient(circle, rgb(245, 245, 245) 0%, rgb(220, 224, 227) 50%, rgb(217, 217, 217) 100%);
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -184,27 +199,27 @@ header nav ul li a:hover {
 }
 
 .indexVideoPokemonDiv {
-  background-color: rgb(98, 161, 98);
+  background: linear-gradient(142deg, rgb(113, 150, 113) 0%, rgb(97, 125, 97) 25%, rgb(163, 207, 163) 50%, rgb(177, 204, 177) 75%, rgb(98, 161, 98) 100%);
   grid-area: uno;
 }
 
 .indexPokemonDiaDiv {
-  background-color: rgb(209, 217, 225);
+  background: radial-gradient(circle, rgb(255, 255, 43) 0%, rgb(240, 240, 153) 25%, rgb(225, 230, 181) 50%, rgb(179, 179, 89) 75%, rgb(202, 204, 92) 100%);
   grid-area: dos;
 }
 
 .indexPokemonMetaDiv {
-  background-color: rgb(121, 69, 126);
+  background: linear-gradient(142deg, rgb(211, 156, 217) 0%, rgb(154, 111, 158) 25%, rgb(185, 138, 186) 50%, rgb(141, 101, 143) 75%, rgb(210, 152, 217) 100%);
   grid-area: tres;
 }
 
 .indexCommunityDayDiv {
-  background-color: rgb(6, 164, 6);
+  background: linear-gradient(142deg, rgb(193, 224, 193) 0%, rgb(109, 247, 109) 25%, rgb(147, 194, 147) 50%, rgb(117, 250, 117) 75%, rgb(176, 247, 176) 100%);
   grid-area: cuatro;
 }
 
 .indexHorizonsDiv {
-  background-color: rgb(71, 137, 229);
+  background: linear-gradient(56deg, rgb(59, 93, 128) 0%, rgb(88, 124, 173) 25%, rgb(112, 135, 212) 50%, rgb(158, 185, 232) 75%, rgb(165, 193, 250) 100%);
   grid-area: cinco;
 }
 
@@ -325,6 +340,7 @@ header nav ul li a:hover {
   margin-top: 0;
   border-top: 1px solid #b0b8c0;
   color: black;
+  transition: all 3s;
 }
 .indexdestacados .flexdestacados .pokerandom {
   flex: 1;
@@ -340,6 +356,10 @@ header nav ul li a:hover {
   width: 70%;
   height: auto;
   margin-bottom: 10px;
+}
+.indexdestacados .flexdestacados .pokerandom:hover {
+  transform: scale(1, 1.2);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .indexdestacados .flexdestacados .pokeprincipalindex {
   flex: 1;
@@ -394,6 +414,12 @@ header nav ul li a:hover {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
 }
+.indexdestacados .flexdestacados .pokeprincipalindex:hover {
+  transform: scale(1.2, 1.2);
+  background: linear-gradient(0deg, rgb(224, 120, 85) 0%, rgb(209, 162, 73) 49%, rgb(231, 255, 13) 100%);
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .indexdestacados .btnexplorarcontainer {
   width: 100%;
   display: flex;
@@ -415,9 +441,10 @@ header nav ul li a:hover {
   border: 2px solid transparent;
 }
 .indexdestacados .btnexplorarcontainer .btnexplorar:hover {
-  background-color: #37474f;
+  background-color: #d1d9e1;
   transform: scale(1.05);
   border-color: #b0b8c0;
+  color: black;
 }
 
 .destacadosgames {
@@ -476,6 +503,10 @@ header nav ul li a:hover {
   font-size: 1.1rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+.destacadosgames .videogameflex .videogamerandom:hover {
+  transform: scale(1, 1.2);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 .destacadosgames .videogameflex .videogameprincipalindex {
   flex: 1.1;
   background-color: #515153;
@@ -498,6 +529,12 @@ header nav ul li a:hover {
   font-size: 1.4rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
+}
+.destacadosgames .videogameflex .videogameprincipalindex:hover {
+  transform: scale(1.2, 1.2);
+  background: linear-gradient(0deg, rgb(224, 120, 85) 0%, rgb(209, 162, 73) 49%, rgb(231, 255, 13) 100%);
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contenedoricono {
@@ -661,6 +698,7 @@ header nav ul li a:hover {
   gap: 20px;
   padding: 20px;
   justify-items: center;
+  transition: transform 3s;
 }
 .pokemoncontainer .pokemoncard {
   width: 180px;
@@ -700,6 +738,11 @@ header nav ul li a:hover {
   font-size: 0.8rem;
   text-transform: uppercase;
   display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pokemoncontainer .pokemoncard:hover {
+  transform: scale(1.1, 1.2);
+  font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
