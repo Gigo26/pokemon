@@ -51,6 +51,12 @@ $altoImagenPokemon: 140px;
     justify-content: $justify;
 }
 
+@mixin displaydirectionalign($display, $flexdirection, $align) {
+    display: $display;
+    flex-direction: $flexdirection;
+    align-items: $align;
+}
+
 @mixin badge {
     border-radius: 5px;
     color: white;

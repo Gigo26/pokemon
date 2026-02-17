@@ -31,7 +31,7 @@ footer {
     @include displaydirectionjustify($flex, $columnas, $centrar);
     gap: 25px;
     @include backgroundmarginpadding(#f2f4f6, 0 auto, 30px);
-    background: radial-gradient(circle,rgba(245, 245, 245, 1) 0%, rgba(220, 224, 227, 1) 50%, rgba(217, 217, 217, 1) 100%);
+    background: radial-gradient(circle, rgba(245, 245, 245, 1) 0%, rgba(220, 224, 227, 1) 50%, rgba(217, 217, 217, 1) 100%);
     min-height: 100vh;
     box-sizing: border-box;
 
@@ -40,11 +40,29 @@ footer {
     }
 }
 
+
 //HEADER
 header {
     div {
         .img-fluid {
             max-width: 500px;
+        }
+    }
+
+    .menu-toggle {
+        @include displaydirectionjustify(none, $columnas, space-between);
+        width: 30px;
+        height: 21px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        margin: 15px auto;
+
+        .bar {
+            height: 3px;
+            width: 100%;
+            background-color: #333;
+            border-radius: 10px;
         }
     }
 
@@ -105,5 +123,49 @@ $maptipos: (
 @each $tipo, $color in $maptipos {
     .colortipo#{$tipo} {
         background-color: $color;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenidoprincipal {
+        padding: 15px;
+    }
+
+    header {
+        .img-fluid {
+            max-width: 220px !important;
+        }
+
+        .menu-toggle {
+            display: flex;
+        }
+
+        .nav {
+            display: none !important;
+            flex-direction: column;
+            background-color: #f8f9fa;
+            padding-bottom: 20px;
+
+            &.show {
+                display: flex !important;
+            }
+
+            li {
+                width: 100%;
+                border-bottom: 1px solid #ddd;
+
+                .nav-link {
+                    padding: 15px;
+                    flex-direction: row !important;
+                    gap: 15px;
+                    justify-content: flex-start;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+    footer p {
+        font-size: 0.8rem;
     }
 }

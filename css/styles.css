@@ -73,6 +73,23 @@ footer p {
 header div .img-fluid {
   max-width: 500px;
 }
+header .menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 15px auto;
+}
+header .menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 10px;
+}
 header nav ul li a img {
   width: 40px;
   height: 40px;
@@ -167,6 +184,40 @@ header nav ul li a:hover {
   background-color: #915121;
 }
 
+@media (max-width: 480px) {
+  .contenidoprincipal {
+    padding: 15px;
+  }
+  header .img-fluid {
+    max-width: 220px !important;
+  }
+  header .menu-toggle {
+    display: flex;
+  }
+  header .nav {
+    display: none !important;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    padding-bottom: 20px;
+  }
+  header .nav.show {
+    display: flex !important;
+  }
+  header .nav li {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  header .nav li .nav-link {
+    padding: 15px;
+    flex-direction: row !important;
+    gap: 15px;
+    justify-content: flex-start;
+    padding-left: 30px;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
 .gridindex {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
