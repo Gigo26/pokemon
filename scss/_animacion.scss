@@ -64,3 +64,57 @@
         font-weight: $negrita;
     }
 }
+
+@media (max-width: 480px) {
+    .seriestext {
+
+        /* Forzamos a que las columnas de Bootstrap se comporten como col-6 */
+        .col-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .serieimgwrapper {
+            /* Ajustamos el tamaño para que quepan dos en el ancho de un celular */
+            width: 140px;
+            height: 220px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            /* Reducimos un poco la fuente para que los nombres largos no ocupen tantas líneas */
+            font-size: 0.85rem;
+            padding: 0 5px;
+            line-height: 1.2;
+        }
+    }
+
+    /* Opcional: Centrar el título de la sección en móviles */
+    .container.my-5 h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .peliculastext {
+
+        /* Forzamos 2 columnas por fila */
+        .col-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .peliculaimgwrapper {
+            /* Ajustamos para que entren dos cómodamente en el ancho del móvil */
+            width: 140px;
+            height: 220px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            /* Fuente un poco más pequeña para que los títulos largos no rompan el diseño */
+            font-size: 0.85rem;
+            line-height: 1.2;
+            padding: 0 4px;
+        }
+    }
+}

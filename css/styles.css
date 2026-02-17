@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 @keyframes fondoAnimado {
   0% {
@@ -643,23 +644,30 @@ header nav ul li a:hover {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-@media (max-width: 768px) {
-  .juegosgeneracion .juegosgenflex {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+@media (max-width: 480px) {
+  .generacionesdiv p {
+    font-size: 1.5rem;
+    text-align: center;
   }
-  .juegosgeneracion .juegosgenflex div {
-    width: 45%;
-  }
-  .juegosgeneracion .juegosgenflex div img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-  }
-  .juegosgeneracion .juegosgenflex div p {
-    font-size: 1.1rem;
+  .generacionesdiv .juegosgeneracion p {
+    font-size: 1.2rem;
+    text-align: center;
     margin-left: 0;
+  }
+  .generacionesdiv .juegosgeneracion .juegosgenflex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .generacionesdiv .juegosgeneracion .juegosgenflex div {
+    width: 90%;
+  }
+  .generacionesdiv .juegosgeneracion .juegosgenflex div img {
+    width: 100%;
+    max-width: 280px;
+  }
+  .generacionesdiv .juegosgeneracion .juegosgenflex div p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
   }
 }
 .consola-circulo {
@@ -718,6 +726,51 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 
+@media (max-width: 480px) {
+  .seriestext {
+    /* Forzamos a que las columnas de Bootstrap se comporten como col-6 */
+  }
+  .seriestext .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .seriestext .serieimgwrapper {
+    /* Ajustamos el tamaño para que quepan dos en el ancho de un celular */
+    width: 140px;
+    height: 220px;
+    margin-bottom: 10px;
+  }
+  .seriestext p {
+    /* Reducimos un poco la fuente para que los nombres largos no ocupen tantas líneas */
+    font-size: 0.85rem;
+    padding: 0 5px;
+    line-height: 1.2;
+  }
+  /* Opcional: Centrar el título de la sección en móviles */
+  .container.my-5 h2 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .peliculastext {
+    /* Forzamos 2 columnas por fila */
+  }
+  .peliculastext .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .peliculastext .peliculaimgwrapper {
+    /* Ajustamos para que entren dos cómodamente en el ancho del móvil */
+    width: 140px;
+    height: 220px;
+    margin-bottom: 8px;
+  }
+  .peliculastext p {
+    /* Fuente un poco más pequeña para que los títulos largos no rompan el diseño */
+    font-size: 0.85rem;
+    line-height: 1.2;
+    padding: 0 4px;
+  }
+}
 .listaTiposGrid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -738,6 +791,27 @@ header nav ul li a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media (max-width: 480px) {
+  .listaTiposGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 5px;
+  }
+  .listaTiposGrid div img {
+    width: 75px;
+    height: 75px;
+  }
+  .listaTiposGrid div p {
+    font-size: 0.8rem;
+  }
+  .tablaTipos {
+    padding: 10px;
+  }
+  .tablaTipos img {
+    width: 100%;
+    height: auto;
+  }
+}
 .pokedex {
   margin: 0;
 }

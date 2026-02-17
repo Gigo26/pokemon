@@ -24,4 +24,30 @@
 }
 .tablaTipos {
     @extend %flexRowCenter;
+}  
+
+@media (max-width: 480px) {
+    .listaTiposGrid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px;
+        padding: 5px;
+
+        div {
+            img {
+                width: 75px; 
+                height: 75px;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .tablaTipos {
+        padding: 10px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
