@@ -1,0 +1,162 @@
+@use "variables" as *;
+
+.destacadosgames {
+    position: relative;
+    margin-top: 40px;
+
+    .containertitledestacado {
+        position: absolute;
+        top: -36px;
+        left: 6%;
+        z-index: 20;
+
+        .cuadrodestacado {
+            background-color: $grisClaro;
+            padding: 8px 22px;
+            @include displaydirectionjustify($flex, $filas, $centrar);
+            gap: 10px;
+            border: 1px solid $bordeGris;
+            border-bottom: none;
+            border-radius: 6px 6px 0 0;
+            white-space: nowrap;
+
+            .minivideogame {
+                width: 20px;
+                height: 20px;
+            }
+
+            span {
+                font-family: $poiretfamily;
+                font-weight: $negrita;
+                font-size: 0.9rem;
+                color: $grisOscuro;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .videogameflex {
+        display: $flex;
+        width: $porcentaje100;
+        height: 400px;
+        align-items: $centrar;
+        border-top: 1px solid $azulBordeGame;
+
+        .videogamerandom {
+            flex: 1;
+            background-color: $grisClaroSuave;
+            height: $alturaCardPequena;
+            @extend %flexColumnCenter;
+            justify-content: flex-end;
+
+            img {
+                width: $porcentaje100;
+                aspect-ratio: 16 / 9;
+                object-fit: contain;
+            }
+
+            p {
+                margin: 4px 0 6px 0;
+                font-size: 1.1rem;
+                font-family: $arialfamily;
+            }
+        }
+
+        .videogamerandom:hover {
+            transform: scale(1, 1.2);
+            font-family: $narrowfamily;
+        }
+
+        .videogameprincipalindex {
+            flex: 1.1;
+            background-color: $grisPrincipalGame;
+            height: $alturaCardPrincipal;
+            width: $porcentaje100;
+            @extend %flexColumnCenter;
+            justify-content: space-between;
+
+            img {
+                width: $porcentaje100;
+                height: 400px;
+                object-fit: contain;
+            }
+
+            .infoinferiordestacada {
+                width: $porcentaje100;
+                background-color: $grisMedio;
+                text-align: $centrar;
+
+                .videogamedestacado {
+                    margin: 4px 0 6px 0;
+                    font-size: 1.4rem;
+                    font-family: $narrowfamily;
+                    font-weight: $negrita;
+                }
+            }
+        }
+
+        .videogameprincipalindex:hover {
+            transform: scale(1.2, 1.2);
+            background: linear-gradient(0deg, rgba(224, 120, 85, 1) 0%, rgba(209, 162, 73, 1) 49%, rgba(231, 255, 13, 1) 100%);
+            font-size: 1.5rem;
+            font-family: $arialfamily;
+        }
+    }
+}
+
+.contenedoricono {
+    @extend %flexRowCenter;
+    background-color: #f8f9fa;
+    margin-bottom: 0.5rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+
+    img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+}
+
+.generacionesdiv {
+    p {
+        font-size: 2rem;
+        font-weight: $negrita;
+        font-family: $poiretfamily;
+    }
+
+    .juegosgeneracion {
+        h3 {
+            margin-left: 20px;
+            font-size: 1.5rem;
+            font-family: $poiretfamily;
+            font-weight:$negrita;
+        }
+
+        .juegosgenflex {
+            @extend %flexRowCenter;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            gap: 20px;
+
+            div {
+                @extend %flexColumnCenter;
+                text-align: $centrar;
+
+                img {
+                    width: 250px;
+                    border-radius: 12px;
+                    box-shadow: $sombraCard;
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-size: 1.5rem;
+                    font-family: $narrowfamily;
+                }
+            }
+        }
+    }
+}
