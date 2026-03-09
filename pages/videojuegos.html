@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon - Videogames</title>
+    <meta name="description" content="Explora el catálogo completo de videojuegos Pokémon, desde los clásicos de Gameboy hasta los títulos actuales de Nintendo Switch. Descubre todas las generaciones.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-    <header class="bg-light border-bottom custom-nav">
+    <header class="border-bottom custom-nav">
         <div class="container text-center py-3">
             <img src="../assets/extra/bannerpokemon.png" alt="Banner pokemon, Pikachu"
                 class="animate__animated animate__flipInX img-fluid">
@@ -22,7 +23,7 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </button>
-        <nav class="bg-light">
+        <nav>
             <ul class="nav justify-content-center py-2" id="nav-list">
                 <li>
                     <a class="nav-link d-flex flex-column align-items-center text-dark" href="../index.html">
@@ -58,7 +59,9 @@
         </nav>
     </header>
     <main class="contenidoprincipal">
-        <div class="destacadosgames">
+        <h1 class="visually-hidden">Catálogo de Videojuegos Pokémon</h1>
+        <section class="destacadosgames">
+            <h2 class="visually-hidden">Videojuegos Destacados</h2>
             <div class="containertitledestacado">
                 <div class="cuadrodestacado">
                     <img src="../assets/iconos/videogames.png" alt="Videogame icono" class="minivideogame">
@@ -66,24 +69,24 @@
                 </div>
             </div>
             <div class="videogameflex">
-                <div class="videogamerandom">
+                <article class="videogamerandom">
                     <img src="../assets/extra/pokemonredfire.jpeg" alt="Imagen del videojuego Pokemon Rojo Fuego">
                     <p>Pokemon Rojo Fuego</p>
-                </div>
-                <div class="videogameprincipalindex">
+                </article>
+                <article class="videogameprincipalindex">
                     <img src="../assets/extra/pokemonza.jpeg" alt="Imagen del videojuego Pokemon Legendas Z-A">
                     <div class="infoinferiordestacada">
                         <p class="videogamedestacado">Pokemon Legendas Z-A</p>
                     </div>
-                </div>
-                <div class="videogamerandom">
+                </article>
+                <article class="videogamerandom">
                     <img src="../assets/extra/pokemonesmeralda.jpeg" alt="Imagen del videojuego Pokemon Esmeralda">
                     <p>Pokemon Esmeralda</p>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="container my-5">
-            <h3 class="mb-4 fw-bold text-start">Consolas</h3>
+        </section>
+        <section class="container my-2">
+            <h2 class="mb-4 fw-bold text-start">Consolas Compatibles</h2>
             <div class="row justify-content-center g-4 text-center">
                 <div class="col-6 col-sm-3">
                     <div class="d-flex flex-column align-items-center">
@@ -122,12 +125,12 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div>
+        </section>
+        <section>
             <div class="generacionesdiv">
-                <p>Explora por Generaciones</p>
-                <div class="juegosgeneracion">
-                    <p>Generación I: El Origen en la Región de Kanto</p>
+                <h2 class="fw-bold mb-4">Explora por Generaciones</h2>
+                <article class="juegosgeneracion">
+                    <h3>Generación I: El Origen en Kanto</h3>
                     <div class="juegosgenflex">
                         <div>
                             <img src="../assets/videogames/pokemonrojofuego.jpg" alt="Icono de pokemon Rojo Fuego">
@@ -142,7 +145,7 @@
                             <p>Pokemon Verde Hoja</p>
                         </div>
                     </div>
-                    <p>Generación II: Los viajes en la Región de Johto</p>
+                    <h3>Generación II: Los viajes en la Región de Johto</h3>
                     <div class="juegosgenflex">
                         <div>
                             <img src="../assets/videogames/pokemonheartgold.webp" alt="Icono de pokemon Heart Gold">
@@ -153,7 +156,7 @@
                             <p>Pokemon Soul Silver</p>
                         </div>
                     </div>
-                    <p>Generación III: Aventuras en la Región de Hoenn</p>
+                    <h3>Generación III: Aventuras en la Región de Hoenn</h3>
                     <div class="juegosgenflex">
                         <div>
                             <img src="../assets/videogames/pokemonrubiomega.webp" alt="Icono de pokemon Rubí Omega">
@@ -168,7 +171,7 @@
                             <p>Pokemon Zafiro Alfa</p>
                         </div>
                     </div>
-                    <p>Generación IV: La interesante Región de Sinnoh</p>
+                    <h3>Generación IV: La interesante Región de Sinnoh</h3>
                     <div class="juegosgenflex">
                         <div>
                             <img src="../assets/videogames/pokemondiamante.png" alt="Icono de pokemon Diamante">
@@ -184,7 +187,7 @@
                             <p>Pokemon Perla</p>
                         </div>
                     </div>
-                    <p>Generación V: A la vista de la Región de Unova</p>
+                    <h3>Generación V: A la vista de la Región de Unova</h3>
                     <div class="juegosgenflex">
                         <div>
                             <img src="../assets/videogames/pokemonblanco.png" alt="Icono de pokemon Blanco">
@@ -203,7 +206,7 @@
                             <p>Pokemon Negro 2</p>
                         </div>
                     </div>
-                    <p>Generación VI: Los Mega Viajes en la Región de Kalos</p>
+                    <h3>Generación VI: Los Mega Viajes en la Región de Kalos</h3>
                     <div class="juegosgenflex">
                         <div>
                             <img src="../assets/videogames/pokemonx.webp" alt="Icono de pokemon X">
@@ -218,7 +221,7 @@
                             <p>Pokemon Y</p>
                         </div>
                     </div>
-                    <p>Generación VII: Visita por las playas de la Región de Alola</p>
+                    <h3>Generación VII: Visita por las playas de la Región de Alola</h3>
                     <div class="juegosgenflex">
                         <div>
                             <img src="../assets/videogames/pokemonsol.png" alt="Icono de pokemon Sol">
@@ -237,7 +240,7 @@
                             <p>Pokemon Ultra Luna</p>
                         </div>
                     </div>
-                    <p>Generación VIII: Las Giga Aventuras en la Región de Galar</p>
+                    <h3>Generación VIII: Las Giga Aventuras en la Región de Galar</h3>
                     <div class="juegosgenflex">
                         <div>
                             <img src="../assets/videogames/pokemonespada.jpg" alt="Icono de pokemon Espada">
@@ -248,7 +251,7 @@
                             <p>Pokemon Escudo</p>
                         </div>
                     </div>
-                    <p>Generación IX: Las Maravillas de la Región de Paldea</p>
+                    <h3>Generación IX: Las Maravillas de la Región de Paldea</h3>
                     <div class="juegosgenflex">
                         <div>
                             <img src="../assets/videogames/pokemonescarlata.jpg" alt="Icono de pokemon Escarlata">
@@ -259,25 +262,18 @@
                             <p>Pokemon Púrpura</p>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>Página Web de Pokemon - Elaborado por Gigo.</p>
+        <p>@2026 - Pokemon Página Diseño Web - Implementado por José Núñez</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const navList = document.getElementById('nav-list');
-
-        menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('show');
-        });
-    </script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

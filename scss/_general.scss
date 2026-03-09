@@ -43,6 +43,8 @@ footer {
 
 //HEADER
 header {
+    background-color: rgba(255, 255, 255, 1);
+
     div {
         .img-fluid {
             max-width: 500px;
@@ -60,7 +62,7 @@ header {
 
         .bar {
             height: 3px;
-            width:$porcentaje100;
+            width: $porcentaje100;
             background-color: #333;
             border-radius: 10px;
         }

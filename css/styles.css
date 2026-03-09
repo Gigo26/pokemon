@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.pokemoncontainer .pokemoncard, .listaTiposGrid div, .destacadosgames .videogameflex .videogamerandom, .destacadosgames .videogameflex .videogameprincipalindex, .generacionesdiv .juegosgeneracion .juegosgenflex div {
+.pokemoncontainer .pokemoncard, .listaTiposGrid article, .destacadosgames .videogameflex .videogamerandom, .destacadosgames .videogameflex .videogameprincipalindex, .generacionesdiv .juegosgeneracion .juegosgenflex div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,6 +70,9 @@ footer p {
   font-weight: bold;
 }
 
+header {
+  background-color: rgb(255, 255, 255);
+}
 header div .img-fluid {
   max-width: 500px;
 }
@@ -194,17 +197,17 @@ header nav ul li a:hover {
   height: 700px;
   margin: 0px;
 }
-.gridindex div {
+.gridindex article {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
   border: 1px solid #c0c8d0;
 }
-.gridindex div img {
+.gridindex article img {
   width: 100%;
 }
-.gridindex div p {
+.gridindex article p {
   margin: 0px;
   padding: 15px;
   font-weight: bold;
@@ -311,7 +314,7 @@ header nav ul li a:hover {
   border: none;
 }
 .indexPokemonDiaDiv .pokemondescripcion p {
-  color: #37474f !important;
+  color: #37474f;
   padding: 0%;
   font-size: 0.9rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -390,7 +393,7 @@ header nav ul li a:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .indexdestacados .flexdestacados .pokeprincipalindex img {
-  width: 90% !important;
+  width: 90%;
   height: auto;
   margin-top: 10px;
   flex-grow: 1;
@@ -402,9 +405,9 @@ header nav ul li a:hover {
   text-align: center;
 }
 .indexdestacados .flexdestacados .pokeprincipalindex .infoinferiordestacada p {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-  padding: 10px 0 !important;
-  margin: 0 !important;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  margin: 0;
 }
 .indexdestacados .flexdestacados .pokeprincipalindex .infoinferiordestacada .pokemontipos {
   width: 100%;
@@ -532,7 +535,7 @@ header nav ul li a:hover {
   justify-content: space-between;
 }
 .destacadosgames .videogameflex .videogameprincipalindex img {
-  width: 100% !important;
+  width: 100%;
   height: 400px;
   object-fit: contain;
 }
@@ -573,10 +576,11 @@ header nav ul li a:hover {
   font-weight: bold;
   font-family: "Poiret One", sans-serif;
 }
-.generacionesdiv .juegosgeneracion p {
+.generacionesdiv .juegosgeneracion h3 {
   margin-left: 20px;
   font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poiret One", sans-serif;
+  font-weight: bold;
 }
 .generacionesdiv .juegosgeneracion .juegosgenflex {
   justify-content: space-evenly;
@@ -658,19 +662,24 @@ header nav ul li a:hover {
   grid-template-columns: repeat(6, 1fr);
   width: 100%;
 }
-.listaTiposGrid div img {
+.listaTiposGrid article img {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-.listaTiposGrid div p {
+.listaTiposGrid article p {
   text-align: center;
   margin-top: 8px;
   font-size: 1rem;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .pokedex {
@@ -741,8 +750,8 @@ header nav ul li a:hover {
   text-transform: capitalize;
 }
 .pokemoncontainer .pokemoncard .pokemontypes {
-  border: none !important;
-  height: auto !important;
+  border: none;
+  height: auto;
   margin-bottom: 5px;
   color: black;
 }
@@ -768,19 +777,19 @@ header nav ul li a:hover {
     padding: 15px;
   }
   header .img-fluid {
-    max-width: 220px !important;
+    max-width: 220px;
   }
   header .menu-toggle {
     display: flex;
   }
   header .nav {
-    display: none !important;
+    display: none;
     flex-direction: column;
     background-color: #f8f9fa;
     padding-bottom: 20px;
   }
   header .nav.show {
-    display: flex !important;
+    display: flex;
   }
   header .nav li {
     width: 100%;
@@ -788,7 +797,7 @@ header nav ul li a:hover {
   }
   header .nav li .nav-link {
     padding: 15px;
-    flex-direction: row !important;
+    flex-direction: row;
     gap: 15px;
     justify-content: flex-start;
     padding-left: 30px;
@@ -830,7 +839,7 @@ header nav ul li a:hover {
     flex: none;
   }
   .indexdestacados .flexdestacados .pokeprincipalindex img {
-    width: 80% !important;
+    width: 80%;
     margin: 20px auto;
   }
   .indexdestacados .flexdestacados .pokeprincipalindex .infoinferiordestacada .pokemontipos {
@@ -877,7 +886,7 @@ header nav ul li a:hover {
     padding: 30px 0;
   }
   .destacadosgames .videogameflex .videogameprincipalindex img {
-    width: 90% !important;
+    width: 90%;
     height: 280px;
     margin: 0 auto 20px auto;
   }
@@ -917,10 +926,10 @@ header nav ul li a:hover {
 }
 @media (max-width: 480px) {
   .contenidoprincipal .pokemoncontainer {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 10px;
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     justify-content: center;
   }

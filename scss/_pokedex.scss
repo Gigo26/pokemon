@@ -84,9 +84,9 @@
         }
 
         .pokemontypes {
-            border: none !important;
+            border: none;
             @extend %flexRowCenter;
-            height: auto !important;
+            height: auto;
             margin-bottom: 5px;
             color: $negro;
 

@@ -4,7 +4,7 @@
     display: $grid;
     grid-template-columns: repeat(6, 1fr);
     width: $porcentaje100;
-    div {
+    article {
         @extend %flexColumnCenter;
         img {
             width: 100px;
@@ -25,3 +25,10 @@
 .tablaTipos {
     @extend %flexRowCenter;
 }  
+
+section {
+    h2 {
+        font-size: 2rem;
+        font-weight:$negrita;
+    }
+}

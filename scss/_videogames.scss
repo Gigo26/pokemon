@@ -76,7 +76,7 @@
             justify-content: space-between;
 
             img {
-                width: $porcentaje100 !important;
+                width: $porcentaje100;
                 height: 400px;
                 object-fit: contain;
             }
@@ -128,10 +128,11 @@
     }
 
     .juegosgeneracion {
-        p {
+        h3 {
             margin-left: 20px;
             font-size: 1.5rem;
-            font-family: $arialfamily;
+            font-family: $poiretfamily;
+            font-weight:$negrita;
         }
 
         .juegosgenflex {
