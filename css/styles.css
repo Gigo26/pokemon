@@ -73,7 +73,7 @@ footer p {
 header {
   background-color: rgb(255, 255, 255);
 }
-header div .img-fluid {
+header div .bannerpokemon {
   max-width: 500px;
 }
 header .menu-toggle {
@@ -781,6 +781,9 @@ section h2 {
   }
   header .menu-toggle {
     display: flex;
+  }
+  header .div .bannerpokemon {
+    max-width: 220px;
   }
   header .nav {
     display: none;

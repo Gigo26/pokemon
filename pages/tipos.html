@@ -1,158 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon - Types</title>
-    <meta name="description"
-        content="Consulta nuestra tabla de tipos Pokémon completa. Aprende las fortalezas y debilidades de cada tipo para mejorar tu estrategia en el juego.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-
-<body>
-    <header class="border-bottom custom-nav">
-        <div class="container text-center py-3">
-            <img src="../assets/extra/bannerpokemon.png" alt="Banner pokemon, Pikachu"
-                class="animate__animated animate__flipInX img-fluid">
-        </div>
-        <button class="menu-toggle" id="menu-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <nav>
-            <ul class="nav justify-content-center py-2" id="nav-list">
-                <li>
-                    <a class="nav-link d-flex flex-column align-items-center text-dark" href="../index.html">
-                        <img src="../assets/iconos/inicio.png" alt="Logo de pokemon" class="mb-1">
-                        <span class="small fw-bold text-uppercase">Inicio</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link d-flex flex-column align-items-center text-dark" href="./videojuegos.html">
-                        <img src="../assets/iconos/videogames.png" alt="Logo de botones de consola" class="mb-1">
-                        <span class="small fw-bold text-uppercase">Videojuegos<br>& Apps</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link d-flex flex-column align-items-center text-dark" href="./pokedex.html">
-                        <img src="../assets/iconos/pokedex.png" alt="Logo de pokebola" class="mb-1">
-                        <span class="small fw-bold text-uppercase">Pokedex</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link d-flex flex-column align-items-center text-dark" href="./tipos.html">
-                        <img src="../assets/iconos/types.png" alt="Logo de tipo de pokemon" class="mb-1">
-                        <span class="small fw-bold text-uppercase">Tabla<br>de Tipos</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link d-flex flex-column align-items-center text-dark" href="./animacion.html">
-                        <img src="../assets/iconos/animation.png" alt="Logo de video" class="mb-1">
-                        <span class="small fw-bold text-uppercase">Animación</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="contenidoprincipal">
-        <h1>Guía de Tipos Pokémon</h1>
-        <section>
-            <h2>Lista completa de tipos</h2>
-            <div class="listaTiposGrid">
-                <article>
-                    <img src="../assets/tipos/acero.jpeg" alt="Icono tipo ACERO">
-                    <p>ACERO</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/agua.jpeg" alt="Icono tipo AGUA">
-                    <p>AGUA</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/bicho.jpeg" alt="Icono tipo BICHO">
-                    <p>BICHO</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/dragon.jpeg" alt="Icono tipo DRAGON">
-                    <p>DRAGON</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/elecrico.jpeg" alt="Icono tipo ELECTRICO">
-                    <p>ELECTRICO</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/fantasma.jpeg" alt="Icono tipo FANTASMA">
-                    <p>FANTASMA</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/fuego.jpeg" alt="Icono tipo FUEGO">
-                    <p>FUEGO</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/hada.jpeg" alt="Icono tipo HADA">
-                    <p>HADA</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/hielo.jpeg" alt="Icono tipo HIELO">
-                    <p>HIELO</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/lucha.jpeg" alt="Icono tipo LUCHA">
-                    <p>LUCHA</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/normal.png" alt="Icono tipo NORMAL">
-                    <p>NORMAL</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/planta.png" alt="Icono tipo PLANTA">
-                    <p>PLANTA</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/psiquico.png" alt="Icono tipo ACERO">
-                    <p>PSIQUICO</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/roca.png" alt="Icono tipo VENENO">
-                    <p>ROCA</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/siniestro.png" alt="Icono tipo SINIESTRO">
-                    <p>SINIESTRO</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/tierra.png" alt="Icono tipo TIERRA">
-                    <p>TIERRA</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/veneno.png" alt="Icono tipo VENENO">
-                    <p>VENENO</p>
-                </article>
-                <article>
-                    <img src="../assets/tipos/volador.png" alt="Icono tipo VOLADOR">
-                    <p>VOLADOR</p>
-                </article>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokemon - Types</title>
+        <meta name="description" content="Consulta nuestra tabla de tipos Pokémon completa. Aprende las fortalezas y debilidades de cada tipo para mejorar tu estrategia en el juego.">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header class="border-bottom custom-nav">
+            <div class="container text-center py-3">
+                <img src="../assets/extra/bannerpokemon.png" alt="Banner pokemon, Pikachu" class="animate__animated animate__flipInX img-fluid">
             </div>
-        </section>
-        <section>
-            <h2>Tabla de Fortalezas y Debilidades</h2>
-            <div class="tablaTipos">
-                <img src="../assets/tipos/tabla.webp" alt="Tabla de tipos general">
-            </div>
-        </section>
-    </main>
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav>
+                <ul class="nav justify-content-center py-2" id="nav-list">
+                    <li>
+                        <a class="nav-link d-flex flex-column align-items-center text-dark" href="../index.html">
+                            <img src="../assets/iconos/inicio.png" alt="Logo de pokemon" class="mb-1">
+                            <span class="small fw-bold text-uppercase">Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link d-flex flex-column align-items-center text-dark" href="./videojuegos.html">
+                            <img src="../assets/iconos/videogames.png" alt="Logo de botones de consola" class="mb-1">
+                            <span class="small fw-bold text-uppercase">Videojuegos<br>& Apps</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link d-flex flex-column align-items-center text-dark" href="./pokedex.html">
+                            <img src="../assets/iconos/pokedex.png" alt="Logo de pokebola" class="mb-1">
+                            <span class="small fw-bold text-uppercase">Pokedex</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link d-flex flex-column align-items-center text-dark" href="./tipos.html">
+                            <img src="../assets/iconos/types.png" alt="Logo de tipo de pokemon" class="mb-1">
+                            <span class="small fw-bold text-uppercase">Tabla<br>de Tipos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link d-flex flex-column align-items-center text-dark" href="./animacion.html">
+                            <img src="../assets/iconos/animation.png" alt="Logo de video" class="mb-1">
+                            <span class="small fw-bold text-uppercase">Animación</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contenidoprincipal">
+            <h1>Guía de Tipos Pokémon</h1>
+            <section>
+                <h2>Lista completa de tipos</h2>
+                <div class="listaTiposGrid">
+                    <article>
+                        <img src="../assets/tipos/acero.jpeg" alt="Icono tipo ACERO">
+                        <p>ACERO</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/agua.jpeg" alt="Icono tipo AGUA">
+                        <p>AGUA</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/bicho.jpeg" alt="Icono tipo BICHO">
+                        <p>BICHO</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/dragon.jpeg" alt="Icono tipo DRAGON">
+                        <p>DRAGON</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/elecrico.jpeg" alt="Icono tipo ELECTRICO">
+                        <p>ELECTRICO</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/fantasma.jpeg" alt="Icono tipo FANTASMA">
+                        <p>FANTASMA</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/fuego.jpeg" alt="Icono tipo FUEGO">
+                        <p>FUEGO</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/hada.jpeg" alt="Icono tipo HADA">
+                        <p>HADA</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/hielo.jpeg" alt="Icono tipo HIELO">
+                        <p>HIELO</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/lucha.jpeg" alt="Icono tipo LUCHA">
+                        <p>LUCHA</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/normal.png" alt="Icono tipo NORMAL">
+                        <p>NORMAL</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/planta.png" alt="Icono tipo PLANTA">
+                        <p>PLANTA</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/psiquico.png" alt="Icono tipo ACERO">
+                        <p>PSIQUICO</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/roca.png" alt="Icono tipo VENENO">
+                        <p>ROCA</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/siniestro.png" alt="Icono tipo SINIESTRO">
+                        <p>SINIESTRO</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/tierra.png" alt="Icono tipo TIERRA">
+                        <p>TIERRA</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/veneno.png" alt="Icono tipo VENENO">
+                        <p>VENENO</p>
+                    </article>
+                    <article>
+                        <img src="../assets/tipos/volador.png" alt="Icono tipo VOLADOR">
+                        <p>VOLADOR</p>
+                    </article>
+                </div>
+            </section>
+            <section>
+                <h2>Tabla de Fortalezas y Debilidades</h2>
+                <div class="tablaTipos">
+                    <img src="../assets/tipos/tabla.webp" alt="Tabla de tipos general">
+                </div>
+            </section>
+        </main>
 
-    <footer>
-        <p>@2026 - Pokemon Página Diseño Web - Implementado por José Núñez</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="../js/script.js"></script>
-</body>
-
+        <footer>
+            <p>@2026 - Pokemon Página Diseño Web - Implementado por José Núñez</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="../js/script.js"></script>
+    </body>
 </html>
